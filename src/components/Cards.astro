@@ -1,0 +1,102 @@
+---
+import { Image } from "astro:assets"
+---
+
+<div class="container">
+    
+    <h1 class="heading"></h1>
+
+        <div class="box-container">
+
+                <div class="box">
+                    <img src="/src/img/Community96.png" alt="">
+                    <h3>Comunidad</h3>
+                    <p>En nuestra VTC, valoramos profundamente el respeto mutuo y la cooperación, manteniendo siempre un enfoque centrado en el bienestar de cada conductor.</p>
+                </div>
+
+                <div class="box">
+                    <img src="/src/img/Staff.png" alt="">
+                    <h3>Staff</h3>
+                    <p> Contamos con un equipo comprometido y cordial que brinda asistencia a los usuarios, 
+                        garantizando un entorno acogedor tanto para los nuevos miembros como para los ya existentes en nuestra VTC.</p>
+                </div>
+
+                <div class="box">
+                    <img src="/src/img/Evolucion.png" alt="">
+                    <h3>Evolución</h3>
+                    <p>Recogemos y respondemos todos los comentarios, opiniones y sugerencias de los miembros para aplicarlos y lograr una mejora continua de la VTC.</p>
+                </div>
+
+                <div class="box">
+                    <img src="/src/img/Podium.png" alt="">
+                    <h3>Ser los mejores</h3>
+                    <p>Como VTC, nos esforzamos por convertirnos en la empresa más destacada y reconocida dentro de TMP.</p>
+                </div>
+
+                <div class="box">
+                    <img src="/src/img/Games.png" alt="">
+                    <h3>Diversión</h3>
+                    <p> En nuestra VTC, la experiencia no se limita solo a ETS 2 o 
+                        ATS. También te ofrecemos la oportunidad de disfrutar y 
+                        divertirte jugando a otros juegos con los miembros de nuestra comunidad.</p>
+                </div>
+
+                <div class="box">
+                    <img src="/src/img/Manos.png" alt="">
+                    <h3>Partners</h3>
+                    <p>En nuestra VTC, contamos con socios destacados, profesionales y comprometidos, que aseguran una colaboración sólida y productiva.</p>
+                </div>
+        </div>
+</div>
+
+<style>
+
+
+
+.container {
+    margin: 40px auto;
+    width: 60%;
+}
+
+.container .heading{
+    padding: 15px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    background-color: #0f0f0f;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.container .box-container .box img{
+    height: 60px;
+    margin: 0 auto;
+}
+
+.container .box-container .box h3{
+    font-size: 22px;
+    margin-bottom: 22px; 
+}
+
+.container .box-container .box p{
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+    transform: scale(1.04);
+}
+
+</style>

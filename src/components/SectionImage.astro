@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets"
+import Discord from "./icons/Discord.astro"
+---
+<img class="img" src="/src/img/Sobrenostros1.png" alt="">
+<div class="container">
+    <p class="frase">SOMOS LUNΛR</p>
+    <p></p>
+        <div class="buttons">    
+            <a href="https://truckersmp.com/vtc/73288" class="aplica">¡Aplica ahora!</a>
+            <a href="https://discord.com/invite/LunarVTC" class="discord">
+                 Nuestro Discord  <Discord class="w-11 h-11 transform translate-x-2.5 "/>  </a>
+                
+        </div>
+</div>
+    
+
+<style>
+.img{
+    height: 1000px;
+    width: 1910px;
+}
+
+.buttons{
+    
+}
+
+.container .frase {
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.container .aplica {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    padding: 9px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.container .aplica:hover {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.container .discord {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    padding: 7px 24px;
+    display: flex;
+    align-items: center;
+ 
+}
+
+.container .discord:hover {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+</style>

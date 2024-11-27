@@ -1,0 +1,230 @@
+---
+import { Image } from "astro:assets";
+---
+<body>
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="/src/img/Logo_frase.png" class="logo">
+                    </a>
+                    <p class="desc">
+                      Lunar VTC es una empresa virtual en TruckersMP (TMP), centrada en los simuladores de conducción Euro Truck Simulator 2 y American Truck Simulator, desarrollados por SCS Software.
+                    </p>
+                    <ul class="socials">
+                        <li>
+                            <a href="https://www.instagram.com/lunarvtc/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.facebook.com/profile.php?id=61561572096322&_rdc=1&_rdr">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@Lunar-club">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="discord.gg/lunarvtc">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                          <a href="https://truckersmp.com/vtc/73288">
+                            <i class="fa-solid fa-truck"></i>
+                          </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Paginas</h6>
+                    <ul class="links">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/sobrenosotros">Sobre nosotros</a></li>
+                        <li><a href="/gallery">Galeria</a></li>
+                        <li><a href="https://truckersmp.com/vtc/73288">Postularse</a></li>
+                        <li><a href="#">LunarHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h6>Eventos</h6>
+                    <ul class="links">
+                        <li><a href="#">Nuestros eventos</a></li>
+                        <li><a href="#">Asistencia a eventos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                  <h6>Soporte</h6>
+                  <ul class="links">
+                      <li><a href="/soporteCondiciones">Termino y condiciones</a></li>
+                      <li><a href="/soportePrivacidad">Politicas de privacidad </a></li>
+                  </ul>
+              </div>
+                
+
+            </div>
+            <div class="copyright-wrapper">
+                <p>Diseño y desarrollo por
+                    <a href="https://linktr.ee/rckZ" target="blank">Rckz</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<style>
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+}
+
+.container {
+  border-top: 2px solid rgba(255, 255, 255, 0.336);
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrapper .footer-widget {
+  width: calc(20% - 30px);
+  margin: 0 15px 50px;
+  padding: 0 12px;
+}
+
+.wrapper .footer-widget:nth-child(1) {
+  width: calc(40% - 50px);
+  margin-right: 15px;
+}
+
+.wrapper .footer-widget .logo {
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+.wrapper .footer-widget p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wrapper .footer-widget .socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wrapper .footer-widget .socials li {
+  list-style: none;
+}
+
+.wrapper .footer-widget .socials li a {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: #0f0f0f;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .footer-widget .socials li a:hover {
+  background-color: #4f4f4f;
+}
+
+.wrapper .footer-widget h6 {
+  margin: 10px 0 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper .footer-widget .links li {
+  list-style: none;
+}
+
+.wrapper .footer-widget .links li a {
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 32px;
+}
+
+.copyright-wrapper {
+  padding: 20px 0;
+  border-top: 1px solid rgba(88, 89, 120, 0.4);
+}
+
+.copyright-wrapper p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.copyright-wrapper p a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.copyright-wrapper p a:hover {
+  color: #ffbb00;
+}
+
+/* Let's write the media query */
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .wrapper .footer-widget,
+  .wrapper .footer-widget:nth-child(1) {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .wrapper .footer-widget,
+  .wrapper .footer-widget:nth-child(1) {
+    width: 100%;
+    margin: 0 10px 50px;
+  }
+}
+
+</style>
+

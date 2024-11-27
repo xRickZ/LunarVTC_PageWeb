@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+import Layout from '../layouts/Layout.astro';
+import AboutusGrande from '../components/AboutusGrande.astro';
+import CardsTeam from '../components/CardsTeam.astro';
+---
+
+
+<Layout title="Sobre nosotros">
+    <AboutusGrande/>
+        <h1 class="text-5xl font-bold p-10 text-center bg-[url('/src/img/Stars.gif')]">
+            Staff
+            <CardsTeam />
+        </h1>
+</Layout>
+
+
+

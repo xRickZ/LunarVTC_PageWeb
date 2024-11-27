@@ -1,0 +1,96 @@
+---
+import { Image } from "astro:assets"
+---
+<div class="container">
+    <div class="heading">
+        <h1>Mas de nosotros a profundidad</h1>
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <h2>¿Quienes somos?</h2>
+            <p>
+                Somos una VTC que nos mueve la pasión por los camiones y las carreteras. Además de la conducción, 
+                compartimos un genuino interés de crear una comunidad donde te puedas sentir comodo jugando.
+            <p>
+            <p> Queremos formar una comunidad inclusiva, abierta a personas de todas partes del mundo, donde no 
+                solo nos enfoquemos en TruckersMP, sino que disfrutemos de una amplia variedad de juegos. 
+                Buscamos crear un ambiente sano, divertido y acogedor para todos los jugadores, donde cada 
+                miembro pueda encontrar su lugar y disfrutar de su pasión por los videojuegos junto a otros.</p>
+        </div>
+        <div class="image">
+            <img src="/src/img/Foto_index.png" alt="">
+        </div>
+    </div>
+</div>
+
+<style>
+
+.container .heading{
+    width: 85%;
+    margin: auto;
+    text-align: center;  
+}
+
+.container .heading h1{
+    font-size: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+
+}
+
+.wrapper{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    width: 50%;
+    margin:0px 25px;
+    text-align: justify;
+}
+
+.content h2{
+    font-size: 30px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.image {
+    width: 70%;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .container .heading h1{
+        font-size: 40px;
+    }
+
+    .content, .image{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .content h2{
+        font-size: 25px;
+    }
+
+}
+
+</style>

@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import { Image } from "astro:assets";
+import SectionImage from '../components/SectionImage.astro';
+import AboutusPequeno from '../components/AboutusPequeno.astro';
+import Logocarrusel from '../components/Logocarrusel.astro';
+import Cards from '../components/Cards.astro';
+---
+
+<Layout title="LUNΛR">
+	<main>
+		<SectionImage/>
+		<section class="">
+			<h1 class="text-5xl font-bold text-center pt-10" >
+				Sobre nosotros
+			<AboutusPequeno class="size-8" />
+		  	</h1>
+
+		  	<h1 class="text-5xl font-bold p-10 text-center bg-[url('/src/img/Stars.gif')]">
+				Objetivos
+				<Cards class="" />
+			</h1>
+			<h1 class="text-5xl font-bold p-10 text-center">
+				Nuestros partners
+				<Logocarrusel/>
+			</h1>
+		</section>
+	</main>
+</Layout>
+
