@@ -1,100 +1,63 @@
 ---
 import { Image } from "astro:assets"
 ---
-<div class="container">
-    
-    <h1 class="heading"></h1>
 
-        <div class="box-container">
+<div class="profile-card">
+    <img width="80" src="/src/img/Jota.png" />
+    <h4>Jota.</h4>
+   <span>Founder</span>
+</div>
 
-                <div class="box">
-                    <img src="/src/img/Melocoton.png" alt="">
-                    <h3>Comunidad</h3>
-                </div>
 
-                <div class="box">
-                    <img src="/src/img/Staff.png" alt="">
-                    <h3>Staff</h3>
-                    <p> Contamos con un equipo comprometido y cordial que brinda asistencia a los usuarios, 
-                        garantizando un entorno acogedor tanto para los nuevos miembros como para los ya existentes en nuestra VTC.</p>
-                </div>
+<div class="profile-card">
+    <img width="80" src="/src/img/Melocoton.png" />
+    <h4>Melocotón.</h4>
+   <span>Management</span>
+</div>
 
-                <div class="box">
-                    <img src="/src/img/Evolucion.png" alt="">
-                    <h3>Evolución</h3>
-                    <p>Recogemos y respondemos todos los comentarios, opiniones y sugerencias de los miembros para aplicarlos y lograr una mejora continua de la VTC.</p>
-                </div>
-
-                <div class="box">
-                    <img src="/src/img/Podium.png" alt="">
-                    <h3>Ser los mejores</h3>
-                    <p>Como VTC, nos esforzamos por convertirnos en la empresa más destacada y reconocida dentro de TMP.</p>
-                </div>
-
-                <div class="box">
-                    <img src="/src/img/Games.png" alt="">
-                    <h3>Diversión</h3>
-                    <p> En nuestra VTC, la experiencia no se limita solo a ETS 2 o 
-                        ATS. También te ofrecemos la oportunidad de disfrutar y 
-                        divertirte jugando a otros juegos con los miembros de nuestra comunidad.</p>
-                </div>
-
-                <div class="box">
-                    <img src="/src/img/Manos.png" alt="">
-                    <h3>Partners</h3>
-                    <p>En nuestra VTC, contamos con socios destacados, profesionales y comprometidos, que aseguran una colaboración sólida y productiva.</p>
-                </div>
-        </div>
+<div class="profile-card">
+    <img width="80" src="/src/img/rckZ3.jpg" />
+    <h4>Rckz</h4>
+   <span>Management</span>
 </div>
 
 <style>
 
-
-
-.container {
-    margin: 40px auto;
-    width: 60%;
-}
-
-.container .heading{
-    padding: 15px;
-    color: #fff;
-    font-size: 50px;
-}
-
-.container .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 25px;
-}
-
-.container .box-container .box{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+.profile-card{
+    width: 300px;
+    height: 400px;
+    background: #1d1d1d56;
     border-radius: 10px;
-    background-color: #0f0f0f;
+    border: 1px solid #ffffff25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #e7e7e7cd;
+    margin: 10px 20px;
+}
+
+.profile-card img{
+    border-radius: 20%;
+    width: 150px;
+}
+
+.profile-card h4{
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.profile-card span{
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.profile-card p{
+    padding: 20px;
     text-align: center;
-    padding: 30px 20px;
-}
-
-.container .box-container .box img{
-    height: 60px;
-    margin: 0 auto;
-}
-
-.container .box-container .box h3{
-    font-size: 22px;
-    margin-bottom: 22px; 
-}
-
-.container .box-container .box p{
-    font-size: 15px;
-    line-height: 1.8;
-    font-weight: normal;
-}
-
-.container .box-container .box:hover{
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
-    transform: scale(1.04);
+    font-size: 13px;
+    padding-top: 10px;
 }
 
 </style>
